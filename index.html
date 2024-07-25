@@ -4,134 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Workshop</title>
 </head>
 
 <body>
-    <div class="container">
-        <!----navbar element begins ---->
+
+<header>
+    <div class="navbar">
         <nav>
             <ul>
-
-                <li> <a href="#home">Home</a></li>
-                <li> <a href="#About">About</a></li>
-                <li> <a href="#Contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Job">Job</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
-
-
         </nav>
-       <!----navbar element  ends---->
-     
     </div>
-    <!----home section---->
+</header>
 
-
-    <div id="Home" class="container">
-        <h2><b><u>Home</u></b></h2>
-       
-        <p>Bonjour tout le monde, j'espere que vous allez bien. Bienvenue sur mon porfolio. Pour plus d"information sur
-            mon profil, consultez mon email. </p>
-
-            <h3><i>mon profil</i></h3>
-            <img src="./images/IMG-20230507-WA0148.jpg"  width="150" height="200" alt="">
-
+<div class="Home">
+    <h2>Home</h2>
+    <div class="content">
+        <img src="./images/IMG-20230507-WA0148.jpg" width="200" height="300" alt="">
+        <p><i>Bonjour tout le monde, j'espère que vous allez bien. Bienvenue sur mon portfolio. Pour plus d'informations sur mon profil, consultez mon email</i>.</p>
     </div>
-    <br>
+</div>
 
+<br>
 
+<div id="About" class="container">
+    <h1><b><u>About</u></b></h1>
+    <p>Mes informations personnelles ci-dessous</p>
+    <ol>
+        <li>Nom de famille = Diagone</li>
+        <li>Prénom = Grace Yasmine</li>
+        <li>Académique = International university of GB</li>
+    </ol>
+    <h3>Une description de mon cursus académique</h3>
+    <a href="./audio/">Click me</a>
+</div>
 
-    <!----About section---->
+<br>
 
-    <div id=" About" class="container">
-        <h1><b><u>About</u></b></h1>
-        <p>Mes informations personnelles ci-dessous</p>
-        <ol>
-
-            <li>Nom de famille = Diagone </li>
-            <li> Prenom= Grace Yasmine </li>
-            <li> Academic= International university of GB </li>
-        </ol>
-
-    <h3>Une description de mon cursus academic</h3>
-            <a href="./audio/">Click me</a>
-           
-       
-       
-
-
-    </div>
-
-    <br>
-
-    <!----Contact section---->
-
-    <div id="Contact" class="container">
-        <h2><b><u>Contact</u></b></h2>
-        
-
-        <p>Veuillez me conctater sur mes adresses suivants  </p>
-
-        <thead  >
-            <table border="1">
+<div id="Contact" class="container">
+    <h2><b><u>Contact</u></b></h2>
+    <p>Veuillez me contacter sur mes adresses suivantes</p>
+    <table border="1">
+        <thead>
             <tr>
-
-
-                <th>Nom </th>
-                <th> Prenom</th>
-                <th>Ecole</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>École</th>
                 <th>Email</th>
             </tr>
-              
-
-
-
         </thead>
+        <tr>
+            <td>Diagone</td>
+            <td>Grace Yasmine</td>
+            <td>Iugb</td>
+            <td>graceyasmine@gmail</td>
+        </tr>
+    </table>
 
-       <tr>  
+    <br>
 
-                 <td>Diagone</td>
-                <td>Grace Yasmine</td>
-                <td>Iugb</td>
-                <td>graceyasmine@gmail</td>
-       </tr>
-                
-            
-             </table>
-            
-
-      
+    <form action="Contact">
+        <label for="name">Nom</label>
+        <input type="text" name="nom" id="contact" placeholder="Entrez votre nom">
         <br>
-
+        <label for="Contact">Numéro</label>
+        <input type="text" name="numero" id="contact" placeholder="Entrez votre contact">
         <br>
-
-
-         <form action="Contact">
-            <label for="name">Nom</label>
-            <input type="text" name="nom" id="contact" placeholder="Entrez votre nom">
-            <br>
-            <label for="Contact">Numero</label>
-            <input type="text" name="numero" id="contact" placeholder="Entrez votre contact">
-            <br>
-            <label for="mail">Mail</label>
-            <input type="text" name="mail" id="contact" placeholder="Entrez votre mail">
-<br>
-            <input type="Submit" value=Submit">
-
-            <br>
-
-<br>
-            <textarea name="Portfolio" id="Portfolio" cols="20" rows="5">
-                Votre commentaire ici
-            </textarea>
-
-
-         </form>
-
-        
-
-
-    </div>
+        <label for="mail">Mail</label>
+        <input type="text" name="mail" id="contact" placeholder="Entrez votre mail">
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <textarea name="Portfolio" id="Portfolio" cols="20" rows="5">Votre commentaire ici</textarea>
+    </form>
+</div>
 
 </body>
 
 </html>
+
